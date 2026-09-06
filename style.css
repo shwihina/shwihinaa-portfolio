@@ -157,6 +157,36 @@ section {
     margin-bottom: 12px;
 }
 
+.about-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.info-card {
+    padding: 20px;
+    background: #101020;
+    border: 1px solid #2e2e50;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff4ecd;
+}
+
+.info-card h4 {
+    color: #ff4ecd;
+    margin-bottom: 8px;
+}
+
+.info-card p {
+    color: #aaa;
+    margin: 3px 0;
+}
+
 .skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -180,34 +210,11 @@ section {
     margin-bottom: 12px;
 }
 
-.bar {
-    height: 8px;
-    background: #292940;
-    border-radius: 10px;
-    overflow: hidden;
+.skill p {
+    color: #999;
+    font-size: 15px;
 }
 
-.bar div {
-    height: 100%;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #ff4ecd, #756cff);
-}
-
-.html {
-    width: 90%;
-}
-
-.css {
-    width: 85%;
-}
-
-.js {
-    width: 70%;
-}
-
-.cpp {
-    width: 78%;
-}
 
 .cards {
     display: grid;
@@ -309,7 +316,8 @@ footer h3 span {
 
     .skills,
     .cards,
-    .contact-box {
+    .contact-box,
+    about-info {
         grid-template-columns: 1fr;
     }
 }
