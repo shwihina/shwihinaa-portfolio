@@ -96,7 +96,7 @@ section {
     margin-bottom: 15px;
 }
 
-.intro > p {
+.intro>p {
     color: #999;
     margin-bottom: 28px;
 }
@@ -129,14 +129,9 @@ section {
     color: white;
     background: linear-gradient(135deg, #ff4ecd, #756cff);
     box-shadow: 0 0 30px #ff4ecd66, 0 0 80px #756cff44;
-    animation: float 3s ease-in-out infinite;
+
 }
 
-@keyframes float {
-    50% {
-        transform: translateY(-12px);
-    }
-}
 
 .about-box {
     padding: 35px;
